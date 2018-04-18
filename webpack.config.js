@@ -8,7 +8,9 @@ module.exports = {
       root: __dirname,
       alias: {
         App: 'src/app.js',
-        exempleOfStatelessComponents: 'src/components/exempleOfStatelessComponents.js'
+        exempleOfStatelessComponents: 'src/components/exempleOfStatelessComponents.js',
+        actionTypes: 'src/store/actions/actionTypes.js',
+        Application : 'src/application.js'
       },
       extensions: ['', '.js', '.jsx']
     },
@@ -23,7 +25,8 @@ module.exports = {
           exclude: /(node_modules|bower_components)/
             },
           { test: /\.css$/, 
-            loader: "style-loader!css-loader" },
+            loader: "style-loader!css-loader",
+          },
             {
                 test: /\.svg$/,
                 loader: 'svg-inline-loader'
